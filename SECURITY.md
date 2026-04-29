@@ -13,7 +13,7 @@
 
 Si descubres un fallo de seguridad en Canvas, **no abras un issue público**. Sigue estos pasos:
 
-1. Envía un correo a **security@joik-studios.com** con el asunto `[SECURITY] Canvas — descripción breve`.
+1. Envía un correo a **jaimegamingpro@gmail.com** con el asunto `[SECURITY] Canvas — descripción breve`.
 2. Incluye:
    - Descripción del problema y su impacto potencial.
    - Pasos para reproducirlo (o prueba de concepto mínima).
