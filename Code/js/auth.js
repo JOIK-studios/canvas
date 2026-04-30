@@ -70,7 +70,7 @@
 
     footer.textContent = mode === "supabase"
       ? "Autenticación conectada con Supabase."
-      : "Modo local activo: autenticación de prototipo sin backend remoto.";
+      : "Prototipo funcional social activo: sin backend remoto.";
   }
 
   function getSupabaseConfig() {
@@ -139,7 +139,7 @@
       await loadSupabaseClient();
       await initAuth(config);
     } catch (error) {
-      console.warn("Fallo al iniciar Supabase; se activa autenticación local.", error);
+      console.warn("Fallo al iniciar Supabase; se activa el prototipo funcional social.", error);
       initLocalAuth();
     }
   }

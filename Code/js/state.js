@@ -579,6 +579,12 @@
   function buyItem(type) {
     const user = state.user;
 
+    const knownTypes = [
+      "pixels_50", "pixels_180", "speed_upgrade", "charge_now",
+      "palette_neon", "max_charge_plus", "recharge_chip", "artist_box", "editor_grid_plus"
+    ];
+    if (!knownTypes.includes(type)) return { ok: false, reason: "unknown_item" };
+
     if (type === "pixels_50") {
       if (user.coins < 20) return { ok: false, reason: "no_coins" };
       user.coins -= 20;
@@ -760,7 +766,7 @@
     state.openCanvas.history = (state.openCanvas.history || []).slice(-OPEN_CANVAS_HISTORY_LIMIT);
     save();
     const after = getStorageStats();
-    addEvent("Admin ejecutó compactación de base local.");
+    addEvent("Admin ejecutó compactación de base del prototipo funcional social.");
     return { ok: true, before, after };
   }
 
