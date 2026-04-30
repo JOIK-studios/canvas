@@ -170,6 +170,7 @@
 
     document.getElementById("artDetailSend")?.addEventListener("click", () => {
       const input = document.getElementById("artDetailComment");
+      if (!input) return;
       const res = window.CanvasApp.Store.commentCreation(creation.id, input.value);
       if (!res.ok) return;
       input.value = "";

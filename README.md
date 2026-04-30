@@ -24,7 +24,7 @@
 - **Frontend:** HTML5, CSS3 y JavaScript vanilla (sin frameworks)
 - **Tipos:** TypeScript (`Code/ts/`) para definiciones de interfaces y store
 - **Backend:** [Supabase](https://supabase.com/) — PostgreSQL, Auth y Row Level Security
-- **Autenticación:** Email/contraseña + OAuth (Google, GitHub, etc.) vía Supabase; modo local de prototipo como fallback
+- **Autenticación:** Email/contraseña + OAuth (Google, GitHub, etc.) vía Supabase; modo prototipo funcional social como fallback sin backend remoto
 
 ---
 
@@ -34,7 +34,29 @@ Canvas actualmente cuenta con servidores en linea para el usuario (vinculadas co
 
 ---
 
-## Contribuir
+## Versiones y lanzamientos
+
+| Versión | Fecha | Estado |
+|---|---|---|
+| **beta0.1** | 29 de abril de 2026 | ✅ Disponible — soporte activo |
+
+### beta0.1 — Primer prototipo funcional social
+
+Lanzado el **29 de abril de 2026**. Primera versión pública del prototipo funcional social de Canvas. Incluye:
+
+- Editor de pixel art 16 × 16 (ampliable hasta 32 × 32)
+- Open Canvas colaborativo 500 × 500
+- Galería compartida con likes, boosts, comentarios y remix
+- Tienda de recursos con economía de monedas
+- Perfil de usuario con vínculos a cuentas sociales (Google, Discord)
+- Panel de administración para moderación
+- Modo prototipo funcional social como fallback (sin backend remoto)
+
+> **Soporte:** La beta0.1 recibe parches de seguridad y correcciones de errores. Reporta fallos abriendo un issue o siguiendo la [política de seguridad](./SECURITY.md).
+
+---
+
+
 
 1. Crea un fork del repositorio.
 2. Trabaja en una rama descriptiva: `feature/nombre-del-cambio`.

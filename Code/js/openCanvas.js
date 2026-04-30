@@ -186,7 +186,7 @@
       ctx.fillRect(x * cell, y * cell, Math.max(1, cell), Math.max(1, cell));
     });
 
-    const visible = Math.floor(document.getElementById("openCanvas").width / view.zoom);
+    const visible = Math.floor((document.getElementById("openCanvas")?.width || 0) / view.zoom);
     ctx.strokeStyle = "rgba(255,255,255,0.9)";
     ctx.lineWidth = 1;
     ctx.strokeRect(

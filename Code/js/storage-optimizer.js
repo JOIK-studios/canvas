@@ -127,23 +127,4 @@ const StorageOptimizer = {
 // Inicializar el optimizador
 StorageOptimizer.init();
 
-// Reemplazar las funciones de guardado globales si existen
-if (window.CANVAS_STATE) {
-  const originalSave = window.CANVAS_STATE.save;
-  window.CANVAS_STATE.save = function() {
-    const size = StorageOptimizer.save('canvas_app_state_v3', this);
-    console.log(`✓ State saved (${size} bytes)`);
-  };
-
-  const originalLoad = window.CANVAS_STATE.load;
-  window.CANVAS_STATE.load = function() {
-    const loaded = StorageOptimizer.load('canvas_app_state_v3');
-    if (loaded) {
-      Object.assign(this, loaded);
-      return this;
-    }
-    return originalLoad.call(this);
-  };
-}
-
 console.log('✓ Storage Optimizer loaded');
