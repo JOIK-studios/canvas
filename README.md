@@ -14,7 +14,6 @@
 | **Tienda** | Compra de paquetes de píxeles con las monedas de la cuenta |
 | **Perfil** | Historial de creaciones, estadísticas y configuración de usuario |
 | **Economía** | Sistema de monedas, inventario de píxeles y cargas de publicación |
-| **Admin** | Panel de administración para gestión de la plataforma |
 | **Temas** | Modo claro y oscuro con persistencia por usuario |
 
 ---
@@ -56,7 +55,7 @@ Lanzado el **29 de abril de 2026**. Primera versión pública del prototipo func
 
 ---
 
-
+## Soporte dentro del GitHub
 
 1. Crea un fork del repositorio.
 2. Trabaja en una rama descriptiva: `feature/nombre-del-cambio`.
