@@ -5,8 +5,6 @@
 | Versión | Soporte de seguridad |
 |---|---|
 | `beta0.1` (29 de abril de 2026) | ✅ Activo |
-| `main` (rama principal) | ✅ Activo |
-| Otras ramas / forks | ❌ No garantizado |
 
 ---
 
