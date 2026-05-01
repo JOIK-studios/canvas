@@ -55,8 +55,24 @@
     };
   }
 
+  function buildPersistedUser(user) {
+    if (!user || typeof user !== "object") return null;
+    return {
+      id: user.id || null,
+      email: user.email || null,
+      user_metadata: {
+        username: user.user_metadata?.username || null
+      },
+      app_metadata: {
+        provider: user.app_metadata?.provider || null
+      },
+      created_at: user.created_at || null
+    };
+  }
+
   function persistSession(user) {
-    localStorage.setItem("canvas_user", JSON.stringify(user));
+    const persistedUser = buildPersistedUser(user);
+    localStorage.setItem("canvas_user", JSON.stringify(persistedUser));
   }
 
   function setMode(mode) {
