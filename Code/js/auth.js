@@ -56,7 +56,19 @@
   }
 
   function persistSession(user) {
-    localStorage.setItem("canvas_user", JSON.stringify(user));
+    const safeEmail = (user?.email || "").trim().toLowerCase();
+    const safeUsername =
+      (user?.user_metadata?.username || safeEmail.split("@")[0] || "Artista").toString();
+
+    localStorage.setItem(
+      "canvas_user",
+      JSON.stringify({
+        email: safeEmail,
+        user_metadata: {
+          username: safeUsername
+        }
+      })
+    );
   }
 
   function setMode(mode) {
